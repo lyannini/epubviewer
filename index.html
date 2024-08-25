@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPUB Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="reader">
+            <div id="content"></div>
+        </div>
+    </div>
+    <div id="controls">
+        <div id="navigation">
+            <button id="prevButton">Previous</button>
+            <span id="pageInfo">Page: 1</span>
+            <button id="nextButton">Next</button>
+        </div>
+    </div>
+    <label for="fileUpload" class="file-upload-button">
+        Choose File
+    </label>
+    <input type="file" id="fileUpload" accept=".epub">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/epubjs/dist/epub.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
